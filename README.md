@@ -45,4 +45,5 @@ Users should be able to:
 - TaildWindCSS and CSS
 - Flexbox
 - Mobile-first workflow
+- LocalStorage for save Todos and theme configuration.
 - [React](https://reactjs.org/) - JS library
