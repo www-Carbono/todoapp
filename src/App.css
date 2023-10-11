@@ -1,42 +1,56 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+  background-color: hsl(235, 21%, 11%);
+  color: white;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body.dark{
+  background-color: hsl(233, 11%, 84%) !important;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+header{
+  background-image: url(./assets/images/bg-desktop-light.jpg);
+  height: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header.dark{
+  background-image: url(./assets/images/bg-desktop-dark.jpg);
+  height: 400px;
 }
 
-.card {
-  padding: 2em;
+* {
+  outline: none;
 }
 
-.read-the-docs {
-  color: #888;
+#inputText{
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 13px 45px 13px rgba(0,0,0,0.52);
+  -moz-box-shadow: 1px 13px 45px 13px rgba(0,0,0,0.52);
+  box-shadow: 1px 13px 45px 13px rgba(0,0,0,0.52);
+}
+
+header.dark form input{
+  background-color: hsl(236, 33%, 92%) !important;
+}
+
+header.dark form input::placeholder{
+  color: black !important;
+}
+
+header.dark form input{
+  color: black !important;
+}
+
+#inputText:focus{
+  -webkit-box-shadow: 1px 13px 45px 13px rgba(255,255,255,0.01);
+-moz-box-shadow: 1px 13px 45px 13px rgba(255,255,255,0.01);
+box-shadow: 1px 13px 45px 13px rgba(255,255,255,0.01);
+}
+
+
+#inputText{
+  background:  hsl(235, 24%, 19%) url('./assets/images/icon-check-circle.svg') no-repeat 1% 50%;
+  background-size: 32px;
+
 }

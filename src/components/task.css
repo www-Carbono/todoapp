@@ -1,0 +1,16 @@
+.color{
+    background-color: hsl(235, 24%, 19%);
+    -webkit-box-shadow: 1px 13px 45px 13px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 13px 45px 13px rgba(0,0,0,1);
+    box-shadow: 1px 13px 45px 13px rgba(0,0,0,1);
+}
+
+.deleteTask{
+    width: 16px;
+    height: 16px;
+}
+
+div.dark ul{
+    color: black !important;
+    background-color: hsl(236, 33%, 92%) !important;
+}
