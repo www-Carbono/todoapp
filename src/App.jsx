@@ -14,7 +14,7 @@ function App () {
   return (
     <>
       <Header addTasks={addTasks} />
-      <div className={darkTheme ? 'flex flex-col justify-center mx-[35%] -mt-28 dark' : 'flex flex-col justify-center mx-[35%] -mt-28'}>
+      <div className={darkTheme ? 'flex flex-col justify-center mx-[5%] -mt-28 dark md:mx-[20%] lg:mx-[30%]' : 'flex flex-col justify-center mx-[5%] -mt-28 md:mx-[20%] lg:mx-[30%]'}>
         <Tasks
           tasks={tasks}
           editTask={editTask}

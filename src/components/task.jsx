@@ -40,8 +40,8 @@ export const Tasks = ({ tasks, editTask, removeTask, filterTasksFunction, filter
           )
         })
     }
-      <div className='flex justify-between px-5 m-3'>
-        <p>{filterTasks.length} Items Left</p>
+      <div className='flex items-center justify-between m-3'>
+        <p className='text-xs'>{filterTasks.length} Items left</p>
         <div className='flex gap-2'>
           <Filters filterTasksFunction={filterTasksFunction} tasks={tasks} removeAll={removeAll} />
 

@@ -16,7 +16,7 @@ export const Header = ({ addTasks }) => {
   }
 
   return (
-    <header className={darkTheme ? 'flex flex-col bg-cover px-[30%] dark' : 'flex flex-col bg-cover px-[30%]'}>
+    <header className={darkTheme ? 'flex flex-col bg-cover px-[5%] dark md:px-[20%] lg:px-[30%]' : 'flex flex-col bg-cover px-[5%] md:px-[20%] lg:px-[30%]'}>
       <div className='flex items-center justify-between mt-20 flex-rows'>
         <h1 className='text-4xl font-medium tracking-[0.5em]'>TODO</h1>
         <img src={darkTheme ? darkModeImage : dayModeImage} alt='moon icon' className='w-5 h-5' onClick={() => setDarkTheme(!darkTheme)} />

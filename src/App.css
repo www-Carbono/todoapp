@@ -12,11 +12,13 @@ body.dark{
 header{
   background-image: url(./assets/images/bg-desktop-light.jpg);
   height: 400px;
+  width: 100%;
 }
 
 header.dark{
   background-image: url(./assets/images/bg-desktop-dark.jpg);
   height: 400px;
+  width: 100%;
 }
 
 * {

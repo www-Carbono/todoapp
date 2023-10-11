@@ -6,7 +6,7 @@ export const Filters = ({ filterTasksFunction, tasks, removeAll }) => {
   const filterStyle = (style) => {
     return (
       buttonStyle === style
-        ? { color: '#3a7bfd', fontWeight: 'bold', border: '2px solid black', borderRadius: '10px', padding: '0px 10px', borderStyle: 'dashed' }
+        ? { color: '#3a7bfd', fontWeight: 'bold', border: '1px solid black', borderRadius: '10px', padding: '0px 8px', borderStyle: 'dashed' }
         : null
     )
   }
@@ -14,13 +14,13 @@ export const Filters = ({ filterTasksFunction, tasks, removeAll }) => {
   return (
     <>
 
-      <div className='flex gap-2'>
+      <div className='flex gap-2 text-sm'>
         <p onClick={() => { filterTasksFunction(tasks); setButtonStyle('All') }} style={filterStyle('All')}>All</p>
         <p onClick={() => { filterTasksFunction(tasks, 'All'); setButtonStyle('Active') }} style={filterStyle('Active')}>Active</p>
         <p onClick={() => { filterTasksFunction(tasks, 'Completed'); setButtonStyle('Completed') }} style={filterStyle('Completed')}>Completed</p>
 
       </div>
-      <p onClick={() => { removeAll(); setButtonStyle('All') }}>Delete All</p>
+      <p onClick={() => { removeAll(); setButtonStyle('All') }} className='text-sm'>Delete All</p>
     </>
   )
 }
